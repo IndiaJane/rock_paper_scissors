@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--This tells the browser to use a modern version of HTML-->
+<html>
+<!--This HTML element represents the entire webpage-->
+
+<head>
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="rps-style.css">
+</head>
+
+<body> 
+    
+    <p class="rps-title">Rock Paper Scissors</p>
+
+
+    <div class="container">
+        <div class="gradient-border">
+            <button onclick="playGame('rock');" class="button-css" data_test="rock-button">
+                <img src="images/rock-emoji.png" class="rps-Image"></button>
+
+            <button onclick="playGame('paper');" class="button-css" data_test="paper-button">
+                <img src="images/paper-emoji.png" class="rps-Image"></button>
+            <button onclick="playGame('scissors');" class="button-css" data_test="scissors-button">
+                <img src="images/scissors-emoji.png" class="rps-Image"></button>
+        </div>
+
+    </div>
+
+    <p class="js-result result"></p>
+    </div>
+    <p class="js-moves rps-result">
+    </p>
+    <p class="js-score score" data_test="data-score"></p>
+
+
+    <div class="container">
+        <button onclick="score.wins = 0;
+    score.losses = 0;
+    score.ties = 0;
+    localStorage.removeItem('score');
+    updateScoreElement();" class="reset-button" data_test="data-reset-button">Reset Score</button>
+    </div>
+
+    <!--This is where javascript is added to make it interactive-->
+    <script src="rps.js">
+    </script>
+</body>
+
+</html>
+
+<!--
+    -Computer randomly selects a move
+    -Compares the moves to get the results
+    -Displays results
+    -Update score
+-->
