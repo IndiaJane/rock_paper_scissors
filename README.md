@@ -2,7 +2,7 @@
 
 This project is an engaging Rock-Paper-Scissors game that challeneges the CPU while displaying the results in an appealing way.
 
-![alt text](https://github.com/IndiaJane/rock_paper_scissors/blob/main/screenshot.jpg?raw=true)
+![alt text](https://github.com/IndiaJane/rock_paper_scissors/blob/main/images/screenshot.jpg?raw=true)
 ### Key Features
 
 - **Score Tracking:** The game records your results in web local storage and displays both past and updated results. The score continues until you decide to reset the score.
