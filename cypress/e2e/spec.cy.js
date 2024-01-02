@@ -1,4 +1,4 @@
-describe('template spec', () => {
+describe('rock-paper-scissors', () => {
   beforeEach(() => {
     cy.visit('http://127.0.0.1:5501/rock-paper-scissors/rock-paper-scissors.html')
   })
